@@ -12,5 +12,5 @@ const listener = http.createServer(function (request, response) {
   response.writeHead(200, { 'Content-Type': 'application/json' })
   response.end('Server Address: 0.tcp.ngrok.io:' + port)
 }).listen(process.env.PORT || 8080, () => {
-  console.log(`Web server is listening on port: ${listener.address().port}`)
+  console.log(`Listening on port: ${listener.address().port}`)
 })
